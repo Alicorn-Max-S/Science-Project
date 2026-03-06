@@ -36,4 +36,12 @@ function checkAccuracy(id, contains = false) {
     document.getElementById("group3").style.opacity = "1"
     document.getElementById("teaching3").style.opacity = "1"
   }
+
+  if (questionsAnswered == 10) {
+    document.getElementById("group4").style.opacity = "1"
+  }
+
+  if (questionsAnswered == 11) {
+    document.getElementById("group5").style.opacity = "1"
+  }
 }
