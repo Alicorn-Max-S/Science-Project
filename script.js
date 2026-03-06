@@ -16,7 +16,7 @@ function checkAccuracy(id, contains = false) {
     }
   } 
   else {
-    if (input.toLowerCase().includes(answers[id - 1].toLowerCase())) {
+    if (input.toLowerCase() ==answers[id - 1].toLowerCase()) {
       document.getElementById(`q${id}Result`).innerHTML = "that is correct :)";
       questionsAnswered++;
     } 
