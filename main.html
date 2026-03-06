@@ -8,9 +8,23 @@
     </head>
     <body>
         <h1 >Nobel Gasses Science Project</h1>
-        <p class="mini-title" id="yay">Are you ready to learn?</p>
-        <label>Question 1:</label>
-        <textarea class = text-input type="text" id="q1" placeholder="Type response here"></textarea>
-        
+        <p class="mini-title" >Are you ready to learn?</p>
+        <div class="parent">
+            <div>
+                <label>Which group are the nobel gasses? </label>
+                <textarea class = text-input type="text" id="q1" placeholder="Type response here"></textarea>
+                <button onclick="checkAccuracy(1)">Submit</button>
+                <p id="q1Result"></p>
+            </div>
+            
+            <div>
+                <label>How many valence electrons do they have?</label>
+                <textarea class = text-input type="text" id="q2" placeholder="Type response here"></textarea>
+                <button onclick="checkAccuracy(2)">Submit</button>
+                <p id="q2Result"></p>
+            </div>
+        </div>
+        <p class="teaching" id="teaching1"></p>
+
     </body>
 </html>
