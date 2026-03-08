@@ -1,4 +1,4 @@
-const answers = ["18", "8", "false", "true", "false", "false", "false", "true", ["full valence shell"], ['radon', 'xenon'], ["none"], "Radon can cause cancer, however symptoms from exposure may not be noticed for years. "];
+const answers = ["18", "6", "false", "true", "false", "false", "false", "true", ["full valence shell", "eight valence electrons"], ['radon', 'xenon'], ["none"], "Radon can cause cancer, however symptoms from exposure may not be noticed for years. ", ["ballons", "breathing", "making your voice squeky"], ["signs", "lights"] ];
 
 let questionsAnswered = 0;
 
