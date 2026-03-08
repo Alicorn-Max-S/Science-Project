@@ -5,10 +5,17 @@
         <link rel="stylesheet" href="styles.css">
         <script src="script.js"></script>
         <title>Noble Gasses Science Project</title>
+        <link rel="icon" href="favicon.png">
     </head>
     <body>
         <h1 >Noble Gasses Science Project</h1>
         <p class="mini-title" >Are you ready to learn?</p>
+        <p style="text-align: center;">Sorry, but I need to give some instructions:
+            You can always submit answers using enter or, if present, the "submit" button. 
+            To move on to the next stage, you must get all questions in the previous stage correct (you can correct them, and this is excluding the fun fact question).
+            For the first too questions you must type a number (i.e. 1).
+            For the true or false questions, you can either type true, false, or the first letter of either of those. Good luck!
+        </p>
         
         <div class="parent1">
             <div>
@@ -19,7 +26,7 @@
             
             <div>
                 <label>How many are there</label>
-                <input type="number" id="q2" placeholder="Type response here" onkeydown="if (event.key == 'Enter'){checkAccuracy(2);}else{}"/>
+                <input type="number" id="q2" placeholder="Type response here" onkeydown="if (event.key == 'Enter'){checkAccuracy(2, true);}else{}"/>
                 <p id="q2Result"></p>
             </div>
         </div>
@@ -36,13 +43,13 @@
             </div>
             
             <div>
-                <label>They are colorless.</label>
+                <label>They are colorless when there is no current.</label>
                 <input type="text" id="q4" placeholder="Type response here" onkeydown="if (event.key == 'Enter'){checkAccuracy(4);}else{}"/>
                 <p id="q4Result"></p>
             </div>
 
             <div>
-                <label>They have a distinct smell.</label>
+                <label>They have a distinct smell when there is no current.</label>
                 <input type="text" id="q5" placeholder="Type response here" onkeydown="if (event.key == 'Enter'){checkAccuracy(5);}else{}"/>
                 <p id="q5Result"></p>
             </div>
@@ -71,19 +78,22 @@
 
             <div>
                 <label>Why aren't noble gasses very reactive? </label>
-                <textarea class = text-input-short type="text" id="q9" placeholder="Type response here"></textarea>
+                <textarea class = text-input-short type="text" id="q9" placeholder="Type response here" onkeydown="if (event.key == 'Enter'){checkAccuracy(9, true);}else{}"></textarea>
                 <button onclick="checkAccuracy(9, true)">Submit</button>
                 <p id="q9Result"></p>
             </div>
             
             <div >
                 <label>Name one of the two debated "most reactive" noble gas.</label>
-                <textarea class = text-input-short type="text" id="q10" placeholder="Type response here"></textarea>
+                <textarea class = text-input-short type="text" id="q10" placeholder="Type response here" onkeydown="if (event.key == 'Enter'){checkAccuracy(10, true);}else{}"></textarea>
                 <button onclick="checkAccuracy(10, true)">Submit</button>
                 <p id="q10Result"></p>
             </div>
 
-            <label for="xenon">This is xenon</label>
+            
+        </div>
+        <div class="parent" id="pic1">
+            <label for="xenon">This is xenon:</label>
             <img id="xenon" src="xenon.jpg">
         </div>
 
@@ -94,14 +104,14 @@
 
             <div>
                 <label>What is the pattern in reactivity? </label>
-                <textarea class = text-input-short type="text" id="q11" placeholder="Type response here"></textarea>
+                <textarea class = text-input-short type="text" id="q11" placeholder="Type response here" onkeydown="if (event.key == 'Enter'){checkAccuracy(11, true);}else{}"></textarea>
                 <button onclick="checkAccuracy(11, true)">Submit</button>
                 <p id="q11Result"></p>
             </div>
             
             <div >
                 <label>Guess the fun fact (good luck)</label>
-                <textarea class = text-input-short type="text" id="q12" placeholder="Type response here"></textarea>
+                <textarea class = text-input-short type="text" id="q12" placeholder="Type response here" onkeydown="if (event.key == 'Enter'){checkAccuracy(12);}else{}"></textarea>
                 <button onclick="checkAccuracy(12)">Submit</button>
                 <p id="q12Result"></p>
             </div>
@@ -113,18 +123,21 @@
 
             <div>
                 <label>What is helium used for?</label>
-                <textarea class = text-input-short type="text" id="q13" placeholder="Type response here"></textarea>
+                <textarea class = text-input-short type="text" id="q13" placeholder="Type response here" onkeydown="if (event.key == 'Enter'){checkAccuracy(13, true);}else{}"></textarea>
                 <button onclick="checkAccuracy(13, true)">Submit</button>
                 <p id="q13Result"></p>
             </div>
             
             <div >
                 <label>What is neon used for?</label>
-                <textarea class = text-input-short type="text" id="q14" placeholder="Type response here"></textarea>
+                <textarea class = text-input-short type="text" id="q14" placeholder="Type response here" onkeydown="if (event.key == 'Enter'){checkAccuracy(14, true);}else{}"></textarea>
                 <button onclick="checkAccuracy(14, true)">Submit</button>
                 <p id="q14Result"></p>
             </div>
             
+            
+        </div>
+        <div class="parent", id="pic2">
             <label for="neon">This is neon</label>
             <img id="neon" src="neon.jpg">
         </div>
