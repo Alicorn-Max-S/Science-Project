@@ -1,12 +1,12 @@
 const answers = [
   "18",
   ["6", "7"],
-  ["False", "F"],
-  ["True", "T"],
-  ["False", "F"],
-  ["False", "F"],
-  ["False", "F"],
-  ["True", "T"],
+  ["false", "f"],
+  ["true", "t"],
+  ["false", "f"],
+  ["false", "f"],
+  ["false", "f"],
+  ["true", "t"],
   [
     "full valence shell",
     "eight valence electrons",
